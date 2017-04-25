@@ -4,7 +4,7 @@ exports.connection = function() {
     var connection = mysql.createConnection({
       host     : 'localhost',
       user     : 'devuser',
-      password : 'kang0113',
+      password : '1111',
       database : 'herbteadb'
     });
     
