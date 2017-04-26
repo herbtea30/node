@@ -3,8 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express',
-                        name: '허브티'});
+  res.render('index', { title: 'Express2',
+                        name: '허브티2'});
 });
 
 module.exports = router;
