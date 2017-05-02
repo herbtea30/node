@@ -12,13 +12,11 @@ router.get('/', function (req, res, next) {
     connection.query('SELECT * FROM user', function (err, rows, fields) {
         if (err) throw err;
 
-        console.log('The user is :', rows[0]);
-
-        var jsonData = {
+    var jsonData = {
             title: 'MariaDB',
             users: rows};
 
-        res.render('index', jsonData);
+        res.json(jsonData);
     });
 
     connection.end();
